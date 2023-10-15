@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tickitz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width:200px) and (max-width:480px)"
+      href="./css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--start header-->
+    <header class="container pt-4">
+      <nav class="d-flex justify-content-between align-item-center">
+        <div class="d-flex align-item-center gap-5">
+          <img src="./tickitz_image/logo/Tickitz 1.png" alt="logo" class="mainLogo"/>
+          <a class="d-mobile mt-3" href="/">Home</a>
+          <a class="d-mobile mt-3" href="/">List Movie</a>
+        </div>
+
+        <button class="btn btn-primary d-mobile">Sign Up</button>
+
+        <!--hamburger button start-->
+        <label for="checkboxForNavMobile" class="menuIcon" id="hamburgerButton">
+            <i class="fas fa-bars"></i>
+        </label>
+        <!--hamburger button end-->
+      </nav>
+      <!--checkbox for navbar start-->
+      <input type="checkbox" name="" id="checkboxForNavMobile">
+      <!--checkbox for navbar end-->
+      
+      <!--Navbar mobile start-->
+        <div class="mobileNav">
+          <section class="navMbl" id="navbarMobile">
+              <div class="d-flex justify-content-center hoverScale">
+                  <a class=" mt-3" href="/">Home</a>
+                </div>
+                <div class="d-flex justify-content-center hoverScale">
+                    <a class=" mt-3" href="/">List Movie</a>
+                </div>
+                <div class=" mt-3 d-flex justify-content-center hoverScale signBtn">
+                    <a class="signBtnText">Sign Up</a>
+                </div>
+            </section>
+        </div>
+      <!--Navbar mobile end-->
+      <!--content start-->
+      <section class="mt-md-10 mt-xs-3">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 pt-title-10 text-center">
+            <span class="text-muted">Nearest Cinema, Newest Movie,</span>
+            <h1 class="text-primary">Find out now!</h1>
+          </div>
+          <div class="col-md-6 col-xs-12">
+            <img
+              class="bannerFilm"
+              src="./tickitz_image/etc/Group 14.png"
+              alt="banner"
+            />
+          </div>
+        </div>
+      </section>
+      <!--content end-->
+    </header>
+    <!--end header-->
+    <!--now showing start-->
+    <section id="now-showing">
+      <div class="container py-5">
+        <!--header-->
+        <div class="d-flex justify-content-between">
+          <h2 class="text-primary">Now Showing</h2>
+          <a class="text-primary">View All</a>
+        </div>
+
+        <!--content-->
+        <div
+          class="d-flex mt-md-5 mt-xs-4 contentNowShowing"
+          id="nowShowingContent"
+        >
+          <div class="image-poster mt-3 firstBannerNowShowing">
+            <img src="./tickitz_image/poster/Rectangle 1190.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1191.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1192.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1390.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1391.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--now showing end-->
+    <!--upComing start-->
+    <section id="upcoming" class="mt-5">
+      <div class="container py-5">
+        <!--header title-->
+        <div class="d-flex justify-content-between align-item-center">
+          <h2>Upcoming Movies</h2>
+          <a class="text-primary mt-md-3 mt-xs-2">View All</a>
+        </div>
+
+        <!--MonthList-->
+        <div class="d-flex justify-content-arround mt-4 gap-2 listMonthMobile">
+          <button class="btn btn-outline-primary px-4 firstMonth">Jan</button>
+          <button class="btn btn-outline-primary px-4">Feb</button>
+          <button class="btn btn-outline-primary px-4">Mar</button>
+          <button class="btn btn-outline-primary px-4">Apr</button>
+          <button class="btn btn-outline-primary px-4">Mei</button>
+          <button class="btn btn-outline-primary px-4">Jun</button>
+          <button class="btn btn-outline-primary px-4">Jul</button>
+          <button class="btn btn-outline-primary px-4">Aug</button>
+          <button class="btn btn-outline-primary px-4">Sep</button>
+          <button class="btn btn-primary px-4 oct">Oct</button>
+          <button class="btn btn-outline-primary px-4">Nov</button>
+          <button class="btn btn-outline-primary px-4">Des</button>
+        </div>
+
+        <!--content-->
+        <div class="d-flex mt-5 listBannerUpcoming" id="nowShowingContent">
+          <div class="image-poster mt-3 firstBannerUpcoming">
+            <img src="./tickitz_image/poster/Rectangle 1190.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1191.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1192.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1390.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+          <div class="image-poster mt-3">
+            <img src="./tickitz_image/poster/Rectangle 1391.png" alt="poster" />
+            <h5 class="text-center mt-3">Black Widow</h5>
+            <span class="text-muted text-center" style="font-size: 14px">
+              Action, Adventure, Sci-Fi</span
+            >
+            <div class="d-grid mt-3">
+              <button class="btn btn-outline-primary">Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--upComing end-->
+    <!--CTA start-->
+    <section id="CTA" class="mt-5 pt-5 pb-5 cta">
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <span class="text-muted text-center">Be the vanguard of the</span>
+        </div>
+        <h1 class="text-primary text-center">Moviegoers</h1>
+
+        <div class="d-flex gap-2 justify-content-center mt-4">
+          <input
+            class="emailInput"
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Type Your Email"
+            style="width: 300px"
+          />
+          <button class="btn btn-primary">Join Now</button>
+        </div>
+
+        <p class="text-center mt-4">
+          By joining you as a Tickitz member,<br />
+          we will always send you the latest updates via email .
+        </p>
+      </div>
+    </section>
+    <!--CTA end-->
+    <!--Footer Start-->
+    <footer class="container pb-3 pt-5 mt-md-10 mt-xs-5">
+      <div class="row">
+        <div class="col-md-3 col-xs-12">
+          <div class="d-flex justify-content-center">
+            <img
+              class="mb-4"
+              src="./tickitz_image/logo/Tickitz 1.png"
+              alt="logo"
+            />
+          </div>
+          <div class="d-flex text-center justify-content-center">
+            <p style="color: #6d727a">
+              Stop waiting in line. Buy tickets<br />
+              conveniently, watch movies quietly.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12 footerExplore">
+          <h6 class="mb-4 pt-4">Explore</h6>
+          <a style="display: block; font-weight: 300">Home</a>
+          <a style="display: block; font-weight: 300">List Movie</a>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <h6 class="mb-4 pt-4 sponsorFooter">Our Sponsor</h6>
+
+          <div class="cinemasLogo footerSponsor">
+            <div class="cinemasFooter">
+              <img
+                class="mb-3"
+                src="./tickitz_image/cinemas/hiflix 2.png"
+                alt="hiflix cinemas"
+              />
+            </div>
+            <div class="cinemasFooter">
+              <img
+                class="mb-3"
+                src="./tickitz_image/cinemas/ebv.id 2.png"
+                alt="cinemas"
+              />
+            </div>
+            <div class="cinemasFooter">
+              <img
+                class="mb-3"
+                src="./tickitz_image/cinemas/CineOne21 2.png"
+                alt="cinemas"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <h6 class="mb-4 pt-4 footerFollow">Follow Us</h6>
+
+          <div class="d-flex gap-2 sosmedFooter align-item-center">
+            <img
+              src="./tickitz_image/icon_sosmed/eva_facebook-outline.svg"
+              alt=""
+            />
+            <p class="pt-3">Tickitz Cinema id</p>
+          </div>
+          <div class="d-flex gap-2 sosmedFooter align-item-center">
+            <img src="./tickitz_image/icon_sosmed/feather_youtube.svg" alt="" />
+            <p class="pt-3">Tickitz Cinema id</p>
+          </div>
+          <div class="d-flex gap-2 sosmedFooter align-item-center">
+            <img src="./tickitz_image/icon_sosmed/Vector.svg" alt="" />
+            <p class="pt-3">Tickitz Cinema id</p>
+          </div>
+          <div class="d-flex gap-2 sosmedFooter align-item-center">
+            <img
+              src="./tickitz_image/icon_sosmed/eva_facebook-outline.svg"
+              alt=""
+            />
+            <p class="pt-3">Tickitz Cinema id</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-5 mb-3">© 2020 Tickitz. All Rights Reserved.</p>
+    </footer>
+    <!--Footer End-->
+
+    <script src="./assets/script.js"></script>
+    
+  </body>
+</html>
