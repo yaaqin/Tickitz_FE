@@ -68,6 +68,9 @@
     align-items: center;
 }
 
+.mt-md-10 {
+    margin-top: 30px;
+}
 
 .sponsorFooter {
     text-align: center;
@@ -111,14 +114,14 @@
 .mobileNav {
     position: absolute;
     overflow-x: hidden;
-    width: 100%;
+    width: 97%;
 }
 
 .navMbl {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 500px;
+    margin-left: 60vh;
 }
 
 .displayMbl {
